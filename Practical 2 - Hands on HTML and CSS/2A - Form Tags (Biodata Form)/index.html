@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Practical 2A - Biodata Form</title>
+</head>
+<body>
+<h1>Enter Biodata: </h1>
+<form method="post">
+    <p><b>First Name:</b> <input type="text" placeholder="John"></p>
+    <p><b>Last Name:</b> <input type="text" placeholder="Smith"></p>
+    <p><b>Date Of Birth:</b> <input type="date"> </p>
+    <p><b>Phone Number:</b> <input type="text" maxlength="10"></p>
+    <p><b>Portfolio:</b> <input type="url" placeholder="For eg. https://www.myportfolio.com/home" style="width: 300px"></p>
+    <p><b>Gender:</b></p>
+      <p><input type="radio" name="gender" value="Male">Male 🚹</p>
+      <p><input type="radio" name="gender" value="Female">Female 🚺</p> 
+      <p><input type="radio" name="gender" value="NA">Non Binary 🌈</p>
+      <p><input type="radio" name="gender" value="NA">Prefer Not Say 🤔</p>
+<p><b>Maritial status:
+  <select>
+    <option>Married</option>
+    <option>Single</option>
+    <option>Bachlor</option>
+  </select>
+</p>
+<p><b>Skill Rating: </b><input type="range"></p>
+<p><b>Describe yourself: </b> 
+  <br><textarea minlength="0" maxlength="500" style="height:100px;width:300px" placeholder="Tell us more about yourself!"></textarea></p>
+<input type="submit" value="Submit" style="width: 100px; height: 50px;background-color: #0ba33e; color: white; font-size:20">
+</form >
+</body>
+</html>
