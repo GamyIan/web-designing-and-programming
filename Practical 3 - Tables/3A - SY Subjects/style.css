@@ -1,0 +1,19 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+table {
+  background-image: url("https://img.freepik.com/premium-vector/hand-painted-watercolor-abstract-background_889452-12379.jpg?semt=ais_hybrid&w=740");
+  background-size: 200%;
+}

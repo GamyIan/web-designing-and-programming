@@ -1,0 +1,69 @@
+/* General Table Font */
+table {
+  font-family: Arial;
+}
+
+/* Styles only for the first table */
+.report-table thead,
+.report-table th {
+  background-color: black;
+  color: white;
+  padding: 7px;
+}
+
+.report-table tbody,
+.report-table td {
+  padding: 7px;
+}
+
+.report-table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.report-table .bluecol {
+  background-color: rgb(32, 123, 209);
+  color: white;
+  font-weight: bold;
+}
+
+/*Styles for Second Table */
+.student-table {
+  font-family: "Times New Roman";
+}
+
+.student-table {
+  background-color: red;
+  color: white;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  border: 2px solid red;
+}
+
+.student-table th {
+  background-color: rgb(123, 11, 11);
+  color: white;
+  padding: 5px;
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+.student-table td {
+  border: 2px solid red;
+}
+
+/* Colored Cells */
+.orange-cell {
+  background-color: orange;
+  color: white;
+}
+
+.blue-cell {
+  background-color: blue;
+  color: white;
+}
+
+.green-cell {
+  background-color: green;
+  color: white;
+}
