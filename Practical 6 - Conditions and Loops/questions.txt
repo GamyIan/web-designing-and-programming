@@ -1,3 +1,20 @@
+Q1: Write a JavaScript program to get the factorial of a number.
+
+Q2: Make a functioning calculator using JavaScript and HTML.
+
+Q3: Write JavaScript to print numbers from 1-20 but print Zig if the number is divisible by 3, Zag if it is by 5 and ZigZag if divisible by both.
+
+Q4: A Cinema charges different ticket prices based on age
+•	Under 5 --> Free
+•	5 - 12  --> 100
+•	13 - 59 --> 150
+•	60+     --> 80
+Perform the following using javascript:
+1. Ask the user for their age using prompt box
+2. Use if, else if, else to determine the ticket price
+3. Show the result using the alert box
+
+
 Q5. Write a js program to check if a character is a vowel or not (Use switch case)
 
 Q6. To build a simple password length checker. Perform the following:
