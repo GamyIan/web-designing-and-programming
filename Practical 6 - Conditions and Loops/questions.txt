@@ -1,0 +1,10 @@
+Q5. Write a js program to check if a character is a vowel or not (Use switch case)
+
+Q6. To build a simple password length checker. Perform the following:
+    - Ask the user to enter a password
+    - Use the if statement to check if it contains at least 8 characters
+    - Display strong password if length matches otherwise weak password
+
+Q7. Write a js program to demonstrate the for in loop. The Details should be iterated over the following:
+    - Your Name, Age, Course, Year, City
+    And then print the details

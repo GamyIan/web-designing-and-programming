@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q5</title>
+    <script>
+      function isVowel() {
+        var chr = document.getElementById("chr").value;
+        var ans = "";
+        switch (chr) {
+          case "a":
+            ans = "Vowel";
+            break;
+          case "e":
+            ans = "Vowel";
+            break;
+          case "i":
+            ans = "Vowel";
+            break;
+          case "o":
+            ans = "Vowel";
+            break;
+          case "u":
+            ans = "Vowel";
+            break;
+          default:
+            ans = "Consonant";
+        }
+        document.getElementById("ans").innerHTML = ans;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Enter Character: <input type="text" id="chr" /></p>
+    <button type="button" onclick="isVowel()">Check Character</button>
+    <p>Answer: <span id="ans"></span></p>
+  </body>
+</html>

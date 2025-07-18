@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+    <script>
+      var age, price;
+      function getAge() {
+        age = Number(window.prompt("What is your Age?"));
+      }
+
+      function checkAge() {
+        if (age < 5) {
+          price = 0;
+        } else if (age < 12) {
+          price = 100;
+        } else if (age < 59) {
+          price = 150;
+        } else {
+          price = 80;
+        }
+
+        window.alert("Price: " + price);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="getAge()">Enter Age</button>
+    <button onclick="checkAge()">Check Age</button>
+  </body>
+</html>

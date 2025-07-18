@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q6</title>
+    <script>
+      function checkStrength() {
+        var pass = document.getElementById("pass").value;
+        if (pass.length >= 8) {
+          document.getElementById("strength").innerHTML = "Strong Password";
+        } else {
+          document.getElementById("strength").innerHTML = "Weak Password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Enter Password: <input type="text" id="pass" />
+      <span id="strength"></span>
+    </p>
+    <button type="button" onclick="checkStrength()">Submit</button>
+  </body>
+</html>

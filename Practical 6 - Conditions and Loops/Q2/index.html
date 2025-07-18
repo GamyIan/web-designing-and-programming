@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6B</title>
+  </head>
+  <body>
+    <form name="calculator">
+      <input type="text" name="ans" value="" />
+      <p>
+        <button type="button" onClick="document.calculator.ans.value+=7">
+          7
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=8">
+          8
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=9">
+          9
+        </button>
+        <button type="button" onclick="document.calculator.ans.value+='*'">
+          x
+        </button>
+      </p>
+      <p>
+        <button type="button" onClick="document.calculator.ans.value+=4">
+          4
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=5">
+          5
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=6">
+          6
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+='-'">
+          -
+        </button>
+      </p>
+      <p>
+        <button type="button" onClick="document.calculator.ans.value+=1">
+          1
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=2">
+          2
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=3">
+          3
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+='+'">
+          +
+        </button>
+      </p>
+      <p>
+        <button type="button" onClick="document.calculator.ans.value=''">
+          AC
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+=0">
+          0
+        </button>
+        <button type="button" onClick="document.calculator.ans.value+='.'">
+          .
+        </button>
+        <button
+          type="button"
+          onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"
+        >
+          =
+        </button>
+      </p>
+    </form>
+  </body>
+</html>
