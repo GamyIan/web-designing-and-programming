@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Location Object</title>
   </head>
-
   <body>
-    <p id="time"></p>
-    <p id="year"></p>
-    <p id="day"></p>
-    <p id="setday"></p>
-    <p id="date"></p>
+    <p id="href"></p>
+    <p id="hostname"></p>
+    <p id="pathname"></p>
+    <p id="protocol"></p>
+    <p id="port"></p>
+
+    <button onclick="redirect()">Surprise!</button>
+    <button onclick="reloadPage()">Reload Page</button>
 
     <script>
-      var d = new Date();
-      document.getElementById("time").innerHTML = "The time is: " + d.getTime();
-      document.getElementById("year").innerHTML =
-        "The Year is: " + d.getFullYear();
-      document.getElementById("day").innerHTML = "The Day is: " + d.getDay();
-      document.getElementById("setday").innerHTML =
-        "The time is: " + d.setDate(d.getDate() + 50);
-      document.getElementById("date").innerHTML = "The Date is: " + d;
+      document.getElementById("href").innerHTML = "Full URL: " + location.href;
+      document.getElementById("hostname").innerHTML =
+        "Hostname: " + location.hostname;
+      document.getElementById("pathname").innerHTML =
+        "Pathname: " + location.pathname;
+      document.getElementById("protocol").innerHTML =
+        "Protocol: " + location.protocol;
+      document.getElementById("port").innerHTML = "Port: " + location.port;
+
+      function redirect() {
+        location.assign("https://www.youtube.com/watch?v=xvFZjo5PgG0");
+      }
+
+      function reloadPage() {
+        location.reload();
+      }
     </script>
   </body>
 </html>
