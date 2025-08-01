@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegEx</title>
+    <script>
+      document.writeln(
+        "<b>----------------------| Aadhaar | ----------------------------</b><br>"
+      );
+      var aadhaar = prompt("Enter your 12-digit Aadhaar number:");
+      document.writeln("<b> You entered: " + aadhaar + "<br>");
+      var aadhaarPattern = /^[2-9]{1}[0-9]{11}$/;
+      var isValid = aadhaarPattern.test(aadhaar);
+      if (isValid) {
+        document.writeln("<b style='color:green'> Valid Aadhaar Number </b>");
+      } else {
+        document.writeln("<b style='color:red'> Invalid Aadhaar Number </b>");
+      }
+      document.writeln(
+        "<br><b>----------------------| Email | ----------------------------</b><br>"
+      );
+
+      var email = prompt("Enter your email address:");
+      document.writeln("<b> You entered: " + email + "<br>");
+      var emailPattern = /^[a-z0-0._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+      var isEmailValid = emailPattern.test(email);
+
+      if (isEmailValid) {
+        document.writeln("<b style='color:green'>Valid Email</b>");
+      } else {
+        document.writeln("<b style='color:red'> Invalid Email</b>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

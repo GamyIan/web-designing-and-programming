@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Object</title>
+  </head>
+
+  <body>
+    <p id="time"></p>
+    <p id="year"></p>
+    <p id="day"></p>
+    <p id="setday"></p>
+    <p id="date"></p>
+
+    <script>
+      var d = new Date();
+      document.getElementById("time").innerHTML = "The time is: " + d.getTime();
+      document.getElementById("year").innerHTML =
+        "The Year is: " + d.getFullYear();
+      document.getElementById("day").innerHTML = "The Day is: " + d.getDay();
+      document.getElementById("setday").innerHTML =
+        "The time is: " + d.setDate(d.getDate() + 50);
+      document.getElementById("date").innerHTML = "The Date is: " + d;
+    </script>
+  </body>
+</html>

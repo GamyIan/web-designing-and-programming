@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigator Object</title>
+  </head>
+
+  <body>
+    <p id="cookie"></p>
+    <p id="appname"></p>
+    <p id="appcodename"></p>
+    <p id="product"></p>
+    <p id="appversion"></p>
+    <p id="useragent"></p>
+
+    <script>
+      document.getElementById("cookie").innerHTML =
+        "navigator.cookieEnabled = " + navigator.cookieEnabled;
+      document.getElementById("appname").innerHTML =
+        "navigator.appName = " + navigator.appName;
+      document.getElementById("appcodename").innerHTML =
+        "navigator.appCodeName = " + navigator.appCodeName;
+      document.getElementById("product").innerHTML =
+        "navigator.product = " + navigator.product;
+      document.getElementById("appversion").innerHTML =
+        "navigator.appVersion = " + navigator.appVersion;
+      document.getElementById("useragent").innerHTML =
+        "navigator.userAgent = " + navigator.userAgent;
+      document.writeln(
+        "navigator.hardwareConcurrency = " + navigator.hardwareConcurrency
+      );
+    </script>
+  </body>
+</html>
